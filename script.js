@@ -253,7 +253,7 @@ storyInlineForm.addEventListener("submit", async (e) => {
 
     switchScreen("dm");
   } else {
-    await showToast("Message could not be sent", 850);
+    await showToast("Message could not be sent (loser)", 850);
     storyInlineInput.select();
   }
 });
