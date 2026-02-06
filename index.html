@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scavenger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stage">
+    <div class="phone">
+      <div class="phoneNotch"></div>
+
+
+      <!-- ===== SCREEN: STORY (START HERE) ===== -->
+      <section class="screen screenStory active" id="screenStory">
+        <div class="storyTop">
+          <div class="pfp ring" id="storyPfp" title="Ryan pfp placeholder"></div>
+          <div class="topText">
+            <div class="name">Ryan</div>
+            <div class="meta" id="storyMeta">Story • 1/1</div>
+          </div>
+        </div>
+
+        <div class="storyCenter">
+          <div class="hint" id="hintText"></div>
+        </div>
+
+      <div class="storyBottom">
+        <form class="inlineBar" id="storyInlineForm" autocomplete="off">
+          <input class="inlineInput" id="storyInlineInput" type="text" placeholder="Message…" />
+          <button class="inlineSend" type="submit">Send</button>
+        </form>
+        <div class="inlineFeedback" id="storyInlineFeedback" aria-live="polite"></div>
+      </div>
+
+
+    </section>
+
+
+
+
+      <!-- ===== SCREEN: DM LIST ===== -->
+      <section class="screen screenList" id="screenList">
+        <div class="listShell">
+          <div class="listTop">
+            <div class="listTitleRow">
+              <div class="listTitle">nihirapadidam</div>
+              <div class="listTopIcons"><span class="ico">✎</span></div>
+            </div>
+
+            <div class="searchBar">
+              <span class="searchIcon">⌕</span>
+              <span class="searchText">Search or ask Meta AI</span>
+              <span class="searchWave">|||</span>
+            </div>
+
+            <div class="notesRow">
+              <div class="noteCard">
+                <div class="pfp note"></div>
+                <div class="noteName">Your note</div>
+                <div class="noteText">Try sharing a note…</div>
+              </div>
+              <div class="noteCard">
+                <div class="pfp note"></div>
+                <div class="noteName">arsenal</div>
+                <div class="noteText">FUCK WE SUCK</div>
+              </div>
+              <div class="noteCard">
+                <div class="pfp note"></div>
+                <div class="noteName">fcbarcelona</div>
+                <div class="noteText">viva la barca</div>
+              </div>
+            </div>
+
+            <div class="listHeaderRow">
+              <div class="listHeader">Messages</div>
+              <div class="listHeaderRight">Requests</div>
+            </div>
+          </div>
+
+          <div class="listBody" id="listBody"></div>
+
+          <div class="tabbar">
+            <span>⌂</span><span>▶</span><span class="activeTab">✈</span><span>⌕</span><span>●</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SCREEN: RYAN THREAD (DM) ===== -->
+      <section class="screen screenDM" id="screenDM">
+        <div class="dmShell">
+          <div class="dmTop">
+            <button class="dmBack" id="dmBack" aria-label="Back">‹</button>
+
+            <div class="dmHeader">
+              <button class="pfpBtn" id="dmPfpBtn" type="button" aria-label="Open story">
+                <div class="pfp small ring" title="Ryan pfp placeholder"></div>
+              </button>
+              <div class="dmNames">
+                <div class="dmTitle">Ryan</div>
+                <div class="dmHandle">ryan._.shahbaba</div>
+              </div>
+            </div>
+
+            <div class="dmIcons">
+              <span class="ico">⊕</span>
+              <span class="ico">✆</span>
+              <span class="ico">▢</span>
+            </div>
+          </div>
+
+          <div class="dmBody" id="dmBody"></div>
+          <form class="dmBottom dmInline" id="dmInlineForm" autocomplete="off">
+            <input class="dmInlineInput" id="dmInlineInput" type="text" placeholder="Message…" />
+            <button class="dmInlineSend" type="submit">Send</button>
+          </form>
+
+
+          <!-- pinned bottom dm drawer -->
+          <section class="drawer sheet" id="dmDrawer" aria-hidden="true">
+            <div class="sheetInner">
+              <form class="pwform" id="dmForm" autocomplete="off">
+                <input class="pwinput" id="dmInput" type="text" placeholder="Message…" />
+                <button class="sendbtn" type="submit">Send</button>
+              </form>
+              <div class="feedback" id="dmFeedback" role="status" aria-live="polite"></div>
+              <button class="ghost" id="closeDmDrawer" type="button">Close</button>
+            </div>
+          </section>
+
+        </div> <!-- dmShell -->
+      </section> <!-- screenDM -->
+
+      <!-- TOAST GOES HERE -->
+      <div class="toast" id="toast" aria-live="polite"></div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
