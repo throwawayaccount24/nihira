@@ -57,8 +57,8 @@ const PRECHAT = [
 const STORIES = [
   {
     bg: "linear-gradient(135deg, #ff2bd6, #ff7a2f)",
-    hint: "Hint 1: Check the place you always walk past but never read.",
-    storyPassword: "poster",
+    hint: "Hi Twin This will be updated tomorrow or whenever both of us have time 🦉",
+    storyPassword: "fioncionasiosnsxoiscnaoisndoiwndoinasioxnioancionasdnion",
     nextPassword: "espresso",
     ryanReply: "Okay fine. Next hint: The next clue is where coffee becomes math.",
   },
